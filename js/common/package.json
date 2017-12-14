@@ -1,15 +1,11 @@
 {
-  "name": "local-date",
+  "name": "local-common",
   "version": "1.0.0",
-  "description": "functions that controls date",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "date",
-    "time"
-  ],
   "author": "olive",
   "license": "ISC"
 }

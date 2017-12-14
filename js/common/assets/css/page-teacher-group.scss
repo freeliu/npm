@@ -1,0 +1,39 @@
+.page-teacher-group {
+  .list {
+    min-width: 660px;
+    max-width: 100%;
+    head {
+      height: 50px;
+      @include p-x(0);
+    }
+    .item {
+      cursor: pointer;
+      display: flex;
+      height: 50px;
+      justify-content: space-between;
+
+      > div {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .list-body {
+      max-height: 280px;
+      overflow-y: auto;
+    }
+  }
+
+  .item-4 {
+    > div {
+      width: 25%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding-right: 5px;
+    }
+  }
+}
+
+
+
+

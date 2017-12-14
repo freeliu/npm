@@ -1,0 +1,117 @@
+
+.page-basic-course-add{
+  .course-info {
+    justify-content: space-between;
+  }
+
+  .h-120 {
+    height: 120px;
+  }
+
+  .num-count {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    color: $c-black-light;
+  }
+
+  .addIndicateToCourse {
+    background-color: #fff;
+    position: relative;
+    min-width: 620px!important;
+    bottom: 50px;
+    .head {
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include p-x(20);
+      background-color: #f7f7f7;
+    }
+    .body {
+      padding-bottom: 20px;
+      @include p-x(60);
+      > * {
+        display: flex;
+        align-items: center;
+        position: relative;
+      }
+      select {
+        height: 34px;
+        @include border-gray-all;
+        //width: 90px;
+        padding-left: 10px;
+      }
+
+      .desc {
+        label {
+          flex-shrink: 0;
+        }
+        input {
+          height: 34px;
+          @include border-gray-all;
+          @include p-x(10);
+          width: 100%;
+        }
+      }
+      .num-count {
+        position: absolute;
+        right: 10px;
+        color: $c-black-light;
+        z-index: 0;
+      }
+      .btn-wrap {
+        justify-content: center;
+      }
+    }
+    .point ~ .point {
+      span, input {
+        border-top: 0;
+      }
+    }
+    .point {
+      display: flex;
+      span {
+        @include border-gray-all();
+        height: 34px;
+        line-height: 34px;
+        @include p-x(5);
+        flex-shrink: 0;
+      }
+
+      input {
+        height: 34px;
+        width: 100%;
+        @include border-gray-all();
+        border-left: 0;
+        padding-left: 10px;
+      }
+    }
+    .unit {
+      height: 26px;
+      label {
+        cursor: pointer;
+      }
+    }
+  }
+
+  select {
+    height: 34px;
+    @include border-gray-all;
+  }
+
+  textarea {
+    padding: 5px;
+  }
+
+  input {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  label {
+    flex-shrink: 0;
+  }
+
+}
+

@@ -1,0 +1,161 @@
+// create by olive@meishakeji.com
+//划分三个断点
+
+
+@media (max-width: 767px) {
+  .hidden-sm:not(.slideInLeft) {
+    display: none !important;
+  }
+  .flex-wrap-sm {
+    flex-wrap: wrap;
+  }
+  .w-full-sm {
+    width: 100% !important;
+  }
+  .absolute-sm {
+    position: absolute !important;
+  }
+  .mt-20-sm {
+    margin-top: 1rem;
+  }
+  .pt-0-sm {
+    padding-top: 0 !important;
+  }
+  .pt-20-sm {
+    padding-top: 1rem;
+  }
+
+  .pt-20-sm {
+    padding-top: 1rem;
+  }
+  .border-top-sm {
+    border-top: 1px solid $c-border;
+  }
+  .ml-0-sm {
+    margin-left: 0 !important;
+  }
+  .main {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  .el-dialog--small {
+    width: 90% !important;
+    height: 80%;
+    .el-dialog__body {
+      max-height: calc(100% - 60px);
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+    }
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  .mt-10-sm {
+    margin-top: .5rem;
+  }
+  .mt-15-sm {
+    margin-top: .75rem;
+  }
+  .ml-5-sm {
+    margin-left: .25rem !important;
+  }
+
+  .pl-0-sm {
+    padding-left: 0 !important;
+  }
+  .p-x-20-sm{
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+  }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .hidden-md:not(.slideInLeft) {
+    display: none !important;
+  }
+  .flex-md{
+    display: flex;
+  }
+
+  .w-full-md {
+    width: 100% !important;
+  }
+  .flex-wrap-md {
+    flex-wrap: wrap;
+  }
+  .absolute-md {
+    position: absolute !important;
+  }
+  .mt-20-md {
+    margin-top: 1rem;
+  }
+  .pt-20-md {
+    padding-top: 1rem;
+  }
+  .border-top-md {
+    border-top: 1px solid $c-border;
+  }
+  .main {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .flex-lg{
+    display: flex;
+  }
+  .hidden-lg {
+    display: none !important;
+  }
+  .w-full-lg {
+    width: 100% !important;
+  }
+  .main {
+    width: calc(100% - 200px);
+  }
+}
+
+
+//rem 配置
+//关键分辨率320 360 375 412 414，// 设计图用750，以375使用1rem=20px为基准，其它分辨率屏幕根据比例缩放
+//使用1rem=20px,而不使用10px（pc端12px限制）
+@media only screen and (max-width: 359px) {
+  html {
+    font-size: 17.666666px;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 374px) {
+  html {
+    font-size: 19.2px;
+  }
+}
+
+@media only screen and (min-width: 361px) and (max-width: 411px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+//412
+@media only screen and (min-width: 376px) and (max-width: 413px) {
+  html {
+    font-size: 21.973333px;
+  }
+}
+
+//414
+@media only screen and (min-width: 414px) and (max-width: 767px) {
+  html {
+    font-size: 22.08px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 20px;
+  }
+}

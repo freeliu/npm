@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html * {
+  box-sizing: border-box;
+  color: inherit;
+  word-break: break-all;
+}
+
+h1, h2, h3, h4, h5, label {
+  font-size: 14px;
+  font-weight: normal;
+  //line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+button {
+  border-style: none;
+  background-color: transparent;
+  padding: 0;
+  &:hover {
+    cursor: pointer;
+    &[disabled] {
+      //cursor: not-allowed;
+    }
+  }
+}
+
+input, textarea, keygen, select, button {
+  font: inherit;
+}
+
+input:-webkit-autofill {
+  background: initial;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+//用图片来显示checkbox和radiobox
+input[type=checkbox], input[type=radio] {
+  display: none;
+  & ~ .on {
+    display: none;
+  }
+  & ~ .off {
+    display: inline-block;
+  }
+  &:checked ~ .on {
+    display: inline-block;
+  }
+  &:checked ~ .off {
+    display: none;
+  }
+
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.el-input.is-disabled .el-input__inner {
+  cursor: initial;
+}
+
+.el-message-box {
+  max-width: 100%;
+}

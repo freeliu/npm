@@ -1,0 +1,155 @@
+
+.page-login {
+  padding-top: 0;
+  align-items: center;
+
+  .login-wrap {
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-div {
+    width: 300px;
+    height: 420px;
+    background-color: white;
+    border-radius: 4px;
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    position: relative;
+    bottom: 10%;
+  }
+
+  .main-div .logo {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  input {
+    width: 100%;
+    margin-top: 0;
+    border: 0;
+    height: 36px;
+    outline: none;
+    //margin-left: auto;
+    //margin-right: auto;
+    border: 1px solid #e3e8ef;
+    border-radius: 4px;
+    padding-left: 15px;
+
+  }
+  .vertical input {
+    width: 50%;
+
+  }
+  #login {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    height: 36px;
+    background-color: #20A0FF;;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    &:hover {
+      //background-color: $c-blue-darker;
+    }
+  }
+  .vertical button {
+
+    width: 45%;
+    height: 36px;
+    background-color: #20A0FF;;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    &:hover {
+      //background-color: $c-blue-darker;
+    }
+  }
+
+  button[disabled] {
+    //background-color: $c-gray;
+
+  }
+
+  #userName {
+    //background-image: url("../img/user.png") !important;
+    background-repeat: no-repeat;
+    margin-top: 29px;
+    display: flex;
+    align-items: center;
+    background-position: 6px center;
+  }
+
+  #pwd {
+    //background: url("../img/pwd.png") no-repeat;
+    margin-top: 20px;
+    background-position: 6px center;
+    //display: flex;
+    //align-items: flex-start;
+
+  }
+  //input:-webkit-autofill {
+  //  padding-left: 5px;
+  //}
+}
+
+@font-face {
+  font-family: "iconfont";
+  src: url('//at.alicdn.com/t/font_gyarerdz589f6r.eot?t=1492679962585'); /* IE9*/
+  src: url('//at.alicdn.com/t/font_gyarerdz589f6r.eot?t=1492679962585#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/font_gyarerdz589f6r.woff?t=1492679962585') format('woff'), /* chrome, firefox */
+  url('//at.alicdn.com/t/font_gyarerdz589f6r.ttf?t=1492679962585') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/font_gyarerdz589f6r.svg?t=1492679962585#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-yonghuming:before {
+  content: "\e640";
+}
+
+.icon-mima:before {
+  content: "\e643";
+}
+
+.icon-yonghuming1:before {
+  content: "\e644";
+}
+
+.icon-logo:before {
+  content: "\e647";
+  font-size: 55px;
+
+}
+
+.verify-text {
+  margin-bottom: 50px;
+
+}
+
+.exit {
+  font-size: 12px;
+  color: #20A0FF;
+  margin-top: 50px;
+}
+
+.exit span {
+  display: block;
+  width: 73px;
+  margin: 0 auto;
+  line-height: 12px;
+  border-bottom: 1px solid #20A0FF;
+}

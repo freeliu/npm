@@ -1,0 +1,89 @@
+@mixin p-x($num) {
+  //padding-left: $num+px;
+  //padding-right: $num+px;
+  padding-left: $num/20+rem;
+  padding-right: $num/20+rem;
+}
+
+@mixin p-y($num) {
+  padding-top: $num+px;
+  padding-bottom: $num+px;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pr-20{
+  padding-right: 20px;
+}
+
+.p-y-5 {
+  @include p-y(5);
+}
+
+.p-y-10 {
+  @include p-y(10);
+}
+
+.p-y-20 {
+  @include p-y(20);
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.p-x-20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.p-x-30 {
+  @include p-x(30)
+}
+
+.p-x-18 {
+  @include p-x(18)
+}
+
+.p-x-5 {
+  @include p-x(5)
+}
+
+.p0 {
+  padding: 0 !important;
+}
+
+.p-x-0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.pb-6 {
+  padding-bottom: 6px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.pl-80 {
+  padding-left: 80px;
+}
+
+.p-y-60 {
+  @include p-y(60)
+}
+

@@ -1,0 +1,213 @@
+@import "base";
+.page-teacher-list {
+  .search-bar {
+    display: flex;
+    input {
+      width: 326px;
+      height: 34px;
+      @include border-gray-all;
+      padding-left: 10px;
+    }
+  }
+
+  .panel-head, .panel-item {
+    @include p-x(0);
+    @include p-y(0);
+    text-align: center;
+    div {
+      @include p-y(20);
+      &:not(:last-child) {
+        @include p-x(10);
+      }
+    }
+  }
+
+  .panel {
+    height: calc(100% - 60px - 34px);
+  }
+
+  .panel-body {
+    height: calc(100% - 50px);
+    overflow-y: auto;
+  }
+
+  .panel-item {
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    div ~ div {
+      border-left: 1px solid $c-border;
+    }
+  }
+
+
+
+  .dialog .addTeacher {
+    background-color: #fff;
+    position: relative;
+    bottom: 50px;
+    //width: 790px;
+    //height: 320px;
+    .head {
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include p-x(20);
+      background-color: #f7f7f7;
+    }
+    .body {
+      padding-bottom: 20px;
+      @include p-x(60);
+      > * {
+        display: flex;
+        align-items: center;
+        position: relative;
+      }
+      select {
+        height: 34px;
+        @include border-gray-all;
+        width: 90px;
+        padding-left: 10px;
+      }
+
+      .desc {
+        input {
+          height: 34px;
+          @include border-gray-all;
+          @include p-x(10);
+        }
+      }
+      .num-count {
+        position: absolute;
+        right: 10px;
+        color: $c-black-light;
+        z-index: 0;
+      }
+      .btn-wrap {
+        justify-content: center;
+      }
+    }
+  }
+
+  .page-basic-course .panel-head div {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .addTeacher .search-result {
+    width: 100%;
+    margin-top: 20px;
+    //flex-wrap: wrap;
+    display: block !important;
+    .r-head, .item {
+      height: 50px;
+      width: 100%;;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include border-gray-all;
+      > div {
+        width: 25%;
+        text-align: center;
+      }
+
+    }
+    .item {
+      border-top: 0;
+    }
+    .r-head {
+      background-color: $c-gray;
+
+    }
+  }
+
+  .addTeacher .search-no-result {
+    display: block !important;
+    margin-top: 20px;
+  }
+
+  .search-no-result div {
+    input {
+      @include border-gray-all;
+      height: 34px;
+    }
+
+  }
+
+  .dialog .editGroupObj {
+    background-color: #fff;
+    position: relative;
+    bottom: 50px;
+    //width: 790px;
+    //height: 320px;
+    .head {
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include p-x(20);
+      background-color: #f7f7f7;
+    }
+    .body {
+      padding-bottom: 20px;
+      @include p-x(60);
+      > * {
+        display: flex;
+        position: relative;
+      }
+      select {
+        height: 34px;
+        @include border-gray-all;
+        width: 90px;
+        padding-left: 10px;
+      }
+
+      .desc {
+        input {
+          height: 34px;
+          @include border-gray-all;
+          @include p-x(10);
+          width: 100%;
+        }
+      }
+      .num-count {
+        position: absolute;
+        right: 10px;
+        color: $c-black-light;
+        z-index: 0;
+      }
+      .btn-wrap {
+        justify-content: center;
+      }
+    }
+  }
+
+  .tag {
+    cursor: pointer;
+    color: $c-black;
+    border-radius: 2px;
+    height: 34px;
+    position: relative;
+    @include p-x(20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+
+    @include border-gray-all;
+    span {
+      position: relative;
+      right: 5px;
+    }
+    img {
+      position: absolute;
+      right: 5px;
+      box-sizing: content-box;
+      padding: 5px;
+    }
+  }
+
+}

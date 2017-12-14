@@ -1,0 +1,77 @@
+$c-blue: #20A0FF;
+$c-blue-darker: #20A0FF;
+$c-black-light: #8d929a;
+$c-black: #515760;
+$c-black-darker: #32353a;
+$c-border: #D3DCE6;
+$c-gray: #E5E9F2;
+$c-gray-light:#F9FAFC;
+$c-red: #ff5e5e;
+$c-orange: #ff9812;
+
+$c-green: #13CE66;
+
+.bg-green {
+  background-color: $c-green;
+}
+
+.c-white {
+  color: #fff;
+}
+
+.c-blue {
+  color: $c-blue
+}
+
+a.c-blue:hover {
+  color: $c-blue-darker;
+  text-decoration: underline;
+}
+
+.c-red {
+  color: $c-red!important;
+}
+
+.c-green {
+  color: $c-green;
+}
+
+.c-blue-darker {
+  color: $c-blue-darker
+}
+
+.c-black-light {
+  color: $c-black-light
+}
+
+.c-black {
+  color: $c-black
+}
+
+.c-black-darker {
+  color: $c-black-darker
+}
+
+.c-orange {
+  color: $c-orange;
+}
+
+.bg-gray {
+  background-color: $c-gray;
+}
+
+.bg-gray-light {
+  background-color: $c-gray-light;
+}
+
+
+.border-red {
+  border: 1px solid $c-red;
+}
+
+a[disabled] {
+  color: #D3DCE6!important;
+}
+.bg-white{
+  background-color: #fff;
+}

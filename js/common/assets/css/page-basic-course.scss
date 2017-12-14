@@ -1,0 +1,65 @@
+@import "base";
+
+.page-basic-course {
+
+  .search-bar {
+    display: flex;
+    input {
+      width: 326px;
+      height: 34px;
+      @include border-gray-all;
+      padding-left: 10px;
+    }
+    .btn-gray {
+      border-left: 0;
+    }
+  }
+
+  .panel-head, .panel-item {
+    @include p-x(0);
+    @include p-y(0);
+    text-align: center;
+    div {
+      @include p-y(20);
+      &:not(:last-child) {
+        @include p-x(10);
+      }
+    }
+
+
+  }
+
+  .panel {
+    height: calc(100% - 60px - 34px);
+  }
+
+  .panel-body {
+    height: calc(100% - 50px);
+    overflow-y: auto;
+  }
+
+  .panel-item {
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    div ~ div {
+      border-left: 1px solid $c-border;
+    }
+  }
+
+  .flex-wrap-wrap {
+    flex-wrap: wrap;
+
+    p {
+      width: 100%;
+    }
+
+    .panel-body {
+      min-height: 50px;
+    }
+
+  }
+
+}

@@ -1,0 +1,181 @@
+@import "base";
+.page-indicate-library{
+
+.tabs {
+  margin-top: -20px;
+  display: flex;
+  @include border-gray-bottom;
+  a {
+    margin-right: 60px;
+    height: 55px;
+    line-height: 55px;
+  }
+  a.on {
+    border-bottom: 4px solid $c-blue;
+  }
+  a:hover {
+    color: $c-blue;
+  }
+}
+
+.level-three-indicate {
+  background-color: #fff;
+  position: relative;
+  bottom: 50px;
+  width: 550px;
+  .head {
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include p-x(20);
+    background-color: #f7f7f7;
+  }
+  .body {
+    @include p-x(60);
+    > * {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+    select {
+      height: 34px;
+      @include border-gray-all;
+      width: 90px;
+      padding-left: 10px;
+    }
+    label {
+      width: 50px;
+    }
+    .desc {
+      input {
+        height: 34px;
+        @include border-gray-all;
+        @include p-x(10);
+        width: 100%;
+      }
+    }
+    .num-count {
+      position: absolute;
+      right: 10px;
+      color: $c-black-light;
+      z-index: 0;
+    }
+    .btn-wrap {
+      justify-content: center;
+    }
+  }
+}
+
+.newIndicateDetail {
+  background-color: #fff;
+  position: relative;
+  width: 550px;
+  bottom: 50px;
+  .head {
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include p-x(20);
+    background-color: #f7f7f7;
+  }
+  .body {
+    padding-bottom: 20px;
+    @include p-x(60);
+    > * {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+    select {
+      height: 34px;
+      @include border-gray-all;
+      //width: 90px;
+      padding-left: 10px;
+    }
+
+    .desc {
+      label {
+        flex-shrink: 0;
+      }
+      input {
+        height: 34px;
+        @include border-gray-all;
+        @include p-x(10);
+        width: 100%;
+      }
+    }
+    .num-count {
+      position: absolute;
+      right: 10px;
+      color: $c-black-light;
+      z-index: 0;
+    }
+    .btn-wrap {
+      justify-content: center;
+    }
+  }
+  .point ~  .point{
+    span,input{
+      border-top: 0;
+    }
+  }
+  .point {
+    display: flex;
+    span {
+      @include  border-gray-all();
+      min-height: 34px;
+      display: flex;
+      align-items: center;
+      @include p-y(5);
+      @include p-x(5);
+      flex-shrink: 0;
+      min-width: 33px;
+      text-align: center;
+    }
+
+    input{
+      height: 34px;
+      width: 100%;
+      @include border-gray-all();
+      border-left: 0;
+      padding-left:10px;
+    }
+  }
+  .unit{
+    height: 26px;
+    label{
+      cursor: pointer;
+    }
+  }
+}
+
+//面板关闭展开控制
+.panel-head, .panel-head-sub {
+  cursor: pointer;
+  display: flex !important;
+  background-image: url("../img/icon-triangle-down.png");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 18px);
+  &.open{
+    background-image: url("../img/icon-triangle-up.png");
+  }
+}
+.panel-head-sub{
+  padding-right: 55px!important;
+}
+
+.panel-head:not(.open) + .panel-body, .panel-head-sub:not(.open) +.panel-body-sub {
+  display: none!important;
+}
+
+
+
+.panel .desc>div
+{
+  height: auto!important;
+  padding: 10px !important;
+}
+
+}
